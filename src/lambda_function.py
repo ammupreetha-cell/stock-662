@@ -99,7 +99,7 @@ def lambda_handler(event, context):
         return {
             "statusCode": 500,
             "body": json.dumps({
-                "message": "Error occurred, saved to s3",
+                "message": "Error occurred, sucessfully saved to s3",
                 "s3_path": f"s3://{bucket_name}/{failure_key}"
             })
         }
